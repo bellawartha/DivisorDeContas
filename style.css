@@ -33,27 +33,22 @@ main {
 }
 
 #addSharedItem {
-  background-color: aliceblue;
   grid-area: addShared;
 }
 
 #addInfosClients {
-  background-color: aliceblue;
   grid-area: addInfoC;
 }
 
 #resultsShared { 
-  background-color: aliceblue;
   grid-area: resultsShared;
 }
 
 #resultsItems {
-  background-color: aliceblue;
   grid-area: resultsItems;
 }
 
 #results {
-  background-color: aliceblue;
   grid-area: results;
 }
 
@@ -62,6 +57,9 @@ main {
 section {
   padding: 20px;
   margin: 20px;
+}
+.container {
+  background-color: #e7e7e7;
 }
 
 label {
