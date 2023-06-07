@@ -15,7 +15,7 @@ Essa parte adiciona os itens individuais consumidos na conta de cada cliente. Pa
 Essa parte calcula o total para cada cliente segundo os itens consumidos, sejam eles compartilhados ou individuais. No fim apresenta dois resultados um com os 10% que geralmente são adicionados nos restaurantes e a outra opção sem os 10%, para as contas que não tem esse adicional ou para as pessoas que escolhem não pagar.
 
 * <strong>Nova conta: </strong>
-Esse botão recarrega a página e consequentemente limpa todos os dados que haviam sido colocados, para que a pessoa coloque novos dados, podendo calcular a divisão d euma nova conta.
+Esse botão recarrega a página e consequentemente limpa todos os dados que haviam sido colocados, para que a pessoa coloque novos dados, podendo calcular a divisão de uma nova conta.
 
 ## :wrench: Tecnologias utilizadas
 * Javascript : Como a linguagem de programação que faz os cálculos e adiciona elementos no DOM.
