@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Divisor de contas</title>
+</head>
+
+<body>
+
+
+    <main>
+
+        <section id="title">
+            <h1> Divisor de contas</h1>
+        </section>
+
+        <section id="addSharedItem">
+            <div class="containerAdd">
+
+                <div>
+                    <label for="clientsSharedNames">Nome das pessoas que compartilharam: </label>
+                    <input type="text" id="clientsSharedNames">
+
+                    <label for="sharedItems">Item compartilhado: </label>
+                    <input type="text" id="sharedItems">
+                    <label for="priceShared"> Preço: </label>
+                    <input type="number" id="priceShared">
+                    <button onclick="clientsSharedItem()">Adicionar cliente</button>
+                    <button id="calcSharedItem" onclick="calcSharedItem()">Calcular</button>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="addInfosClients">
+
+            <div class="containerAdd">
+                <label for="clientName">Nome do cliente:</label>
+                <input type="text" id="clientName">
+                <label for="consumedItems">Item individual: </label>
+                <input type="text" id="consumedItems">
+                <label for="itemPrice"> Preço do item: </label>
+                <input type="number" id="itemPrice">
+                <button id="addClient" onclick="add()">Adicionar</button>
+
+            </div>
+
+
+        </section>
+
+        <section id='btnResults'>
+            <div>
+                <button id="calc" onclick="calcClient()">Calcular</button>
+                <button onclick="location.reload()"> Nova conta</button>
+            </div>
+        </section>
+
+
+        <section id="resultsShared">
+
+            <div class="resultsInfos" id="infosResultsShared">
+                <h2>Resultado dos itens compartilhados</h2>
+            </div>
+
+        </section>
+
+        <section id="resultsItems">
+
+            <div class="resultsInfos" id="containerResults">
+                <h2>Itens por cliente</h2>
+
+            </div>
+
+        </section>
+
+        <section id="results">
+            <h2>Total por cliente</h2>
+            <div class="resultsInfos" id="clientTotalAmount">
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

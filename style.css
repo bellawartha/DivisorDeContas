@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+/* Estilos gerais */
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* Grid Areas */
+
+main {
+  display: grid;
+  grid-template-areas:
+    "title btnResults"
+    "addShared addInfoC "
+    "resultsShared resultsItems"
+    "results  results";
+}
+
+#title {
+  grid-area: title;
+}
+
+#btnResults {
+  grid-area: btnResults;
+}
+
+#addSharedItem {
+  background-color: aliceblue;
+  grid-area: addShared;
+}
+
+#addInfosClients {
+  background-color: aliceblue;
+  grid-area: addInfoC;
+}
+
+#resultsShared { 
+  background-color: aliceblue;
+  grid-area: resultsShared;
+}
+
+#resultsItems {
+  background-color: aliceblue;
+  grid-area: resultsItems;
+}
+
+#results {
+  background-color: aliceblue;
+  grid-area: results;
+}
+
+/* Estilos da entrada de dados */
+
+section {
+  padding: 20px;
+  margin: 20px;
+}
+
+label {
+  display: inline-block;
+  font-weight: 500;
+  margin: 2%;
+
+}
+
+input {
+  display: inline-block;
+  width: 25%;
+  padding: 4px;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 2%;
+  margin-left: 5%;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+button:hover {
+  background-color: #3c8a41;
+}
+
+#calcSharedItem{
+  visibility: hidden;
+}
+
+
+/* Estilos dos resultados */
+
+#containerResults h2 {
+  margin-bottom: 5%;
+}
+
+.resultsInfos {
+  width: 100%;
+}
+
+.resultsInfos p {
+  margin-top: 2%;
+}
