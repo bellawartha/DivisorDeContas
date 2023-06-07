@@ -1,7 +1,7 @@
 <h1 align="center">:file_cabinet: Divisor de contas</h1>
 
 ## :memo: Descrição
-Este projeto foi construído com objetivo de fazer divisão de uma conta entre várias pessoas.  O criei para um teste de programação.
+Este projeto foi construído com objetivo de fazer divisão de uma conta entre várias pessoas.  Foi criado para um teste de programação.
 
 ## :books: Funcionalidades
 
