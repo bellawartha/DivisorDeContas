@@ -24,8 +24,7 @@ Esse botão recarrega a página e consequentemente limpa todos os dados que havi
 
 ## :rocket: Rodando o projeto
 Acesse essa página
-<a href= "https://bellawartha.github.io/DivisorDeContas/">
-
+<a href="https://bellawartha.github.io/DivisorDeContas/"> Divisor de contas</a>
 
 ## :handshake: Colaboradores
 <table>
