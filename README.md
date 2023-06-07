@@ -23,7 +23,8 @@ Esse botão recarrega a página e consequentemente limpa todos os dados que havi
 * CSS : Como a linguagem de estilização.
 
 ## :rocket: Rodando o projeto
-
+Acesse essa página
+<a href= "https://bellawartha.github.io/DivisorDeContas/">
 
 
 ## :handshake: Colaboradores
