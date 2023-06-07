@@ -5,16 +5,16 @@ Este projeto foi construído com objetivo de fazer divisão de uma conta entre v
 
 ## :books: Funcionalidades
 
-* <strong>Cálculo de itens compartilhados</strong>
+* <strong>Cálculo de itens compartilhados: </strong>
 Essa funcionalidade traz a opção de adicionar várias pessoas e divide o valor do item compartilhado entre elas. Para isso é preciso primeiro adicionar todos os nomes e depois adicionar o nome do item, o  preço e calcular.
 
-* <strong>Cálculo de itens individuais</strong>
+* <strong>Cálculo de itens individuais: </strong>
 Essa parte adiciona os itens individuais consumidos na conta de cada cliente. Para isso é preciso adicionar o nome do cliente, o item e o seu respectivo preço.
 
-* <strong>Cálculo total</strong>
+* <strong>Cálculo total: </strong>
 Essa parte calcula o total para cada cliente segundo os itens consumidos, sejam eles compartilhados ou individuais. No fim apresenta dois resultados um com os 10% que geralmente são adicionados nos restaurantes e a outra opção sem os 10%, para as contas que não tem esse adicional ou para as pessoas que escolhem não pagar.
 
-* <strong>Nova conta</strong>
+* <strong>Nova conta: </strong>
 Esse botão recarrega a página e consequentemente limpa todos os dados que haviam sido colocados, para que a pessoa coloque novos dados, podendo calcular a divisão d euma nova conta.
 
 ## :wrench: Tecnologias utilizadas
