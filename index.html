@@ -21,14 +21,22 @@
         <section id="addSharedItem" class="container">
             <div class="containerAdd">
 
-                <div>
+                <div class="inputs">
                     <label for="clientsSharedNames">Nome das pessoas que compartilharam: </label>
                     <input type="text" id="clientsSharedNames">
+                </div>
 
+                <div class="inputs">
                     <label for="sharedItems">Item compartilhado: </label>
                     <input type="text" id="sharedItems">
+                </div>
+
+                <div class="inputs">
                     <label for="priceShared"> Preço: </label>
                     <input type="number" id="priceShared">
+                </div>
+
+                <div>
                     <button onclick="clientsSharedItem()">Adicionar cliente</button>
                     <button id="calcSharedItem" onclick="calcSharedItem()">Calcular</button>
                 </div>
@@ -39,12 +47,23 @@
         <section class="container" id="addInfosClients">
 
             <div class="containerAdd">
-                <label for="clientName">Nome do cliente:</label>
-                <input type="text" id="clientName">
-                <label for="consumedItems">Item individual: </label>
-                <input type="text" id="consumedItems">
-                <label for="itemPrice"> Preço do item: </label>
-                <input type="number" id="itemPrice">
+
+                <div class="inputs">
+
+                    <label for="clientName">Nome do cliente:</label>
+                    <input type="text" id="clientName">
+                </div>
+
+                <div class="inputs">
+                    <label for="consumedItems">Item individual: </label>
+                    <input type="text" id="consumedItems">
+                </div>
+
+                <div class="inputs">
+                    <label for="itemPrice"> Preço do item: </label>
+                    <input type="number" id="itemPrice">
+                </div>
+
                 <button id="addClient" onclick="add()">Adicionar</button>
 
             </div>
@@ -83,6 +102,11 @@
 
             </div>
 
+        </section>
+
+        <section class="container" id="results_10">
+            <h2>Total com 10%</h2>
+            <div class="resultsInfos" id="clientTotalAmount10"> </div>
         </section>
 
     </main>

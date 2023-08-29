@@ -63,6 +63,7 @@ let txtPrice = document.getElementById('itemPrice');
 // Resultados
 let divResults = document.getElementById('containerResults');
 let clientTotalAmount = document.getElementById('clientTotalAmount');
+let clientTotalAmount10 = document.getElementById ('clientTotalAmount10');
 let resultShared = document.getElementById('infosResultsShared');
 
 let infoShared = document.createElement('div');
@@ -114,18 +115,19 @@ function addItem() {
 
 function calcClient() {
     clientTotalAmount.innerHTML = '';
+    clientTotalAmount10.innerHTML = ' ';
 
     let resultClient = document.createElement('div');
     let resultClient10 = document.createElement('div');
     clientTotalAmount.appendChild(resultClient);
-    clientTotalAmount.appendChild(resultClient10);
+    clientTotalAmount10.appendChild(resultClient10);
 
     for (let client of clients) {
         let tot = client.calcTotalClient();
         resultClient.innerHTML += `<p> Total de ${client.nome}: R$ ${tot}</p>`;
     }
 
-    resultClient10.innerHTML = '<p><strong>TOTAL COM 10%</strong></p>';
+
     for (let client of clients) {
         let tot = client.calcTotalClient10();
         resultClient10.innerHTML += `<p> Total de ${client.nome} com os 10%: R$ ${tot}</p>`;

@@ -10,6 +10,21 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  background-image: url(./image/armand-khoury-4cBVro7SHLs-unsplash.jpg);
+  background-repeat: repeat-y;
+  background-size: cover;
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vmin;
+  width: 100%;
+  background-color: white;
+  opacity: 0.85;
+  z-index: -1;
 }
 
 
@@ -18,13 +33,16 @@ body {
 main {
   display: grid;
   grid-template-areas:
-    "title btnResults"
-    "addShared addInfoC "
-    "resultsShared resultsItems"
-    "results  results";
+    ". title btnResults ."
+    " . addShared addInfoC ."
+    ". resultsShared resultsItems . "
+    ". results  results_10 .";
 }
 
 #title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #58b45e;
   grid-area: title;
 }
 
@@ -40,7 +58,7 @@ main {
   grid-area: addInfoC;
 }
 
-#resultsShared { 
+#resultsShared {
   grid-area: resultsShared;
 }
 
@@ -52,14 +70,35 @@ main {
   grid-area: results;
 }
 
+#results_10 {
+  grid-area: results_10;
+}
+
 /* Estilos da entrada de dados */
 
 section {
   padding: 20px;
   margin: 20px;
 }
+
 .container {
-  background-color: #e7e7e7;
+  background-color: rgba(245, 245, 245, 0.842);
+  border-radius: 2rem;
+}
+
+.containerAdd {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.inputs input {
+  max-height: 2rem;
 }
 
 label {
@@ -67,12 +106,6 @@ label {
   font-weight: 500;
   margin: 2%;
 
-}
-
-input {
-  display: inline-block;
-  width: 25%;
-  padding: 4px;
 }
 
 button {
@@ -91,8 +124,12 @@ button:hover {
   background-color: #3c8a41;
 }
 
-#calcSharedItem{
+#calcSharedItem {
   visibility: hidden;
+}
+
+#addClient {
+  width: 25%;
 }
 
 
