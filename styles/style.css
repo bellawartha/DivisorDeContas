@@ -10,22 +10,12 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-image: url(./image/armand-khoury-4cBVro7SHLs-unsplash.jpg);
+  background-image: url(../image/pawel-czerwinski-JG2DaZZzvzk-unsplash\ \(1\).jpg);
   background-repeat: repeat-y;
   background-size: cover;
 }
 
-body::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100vmin;
-  width: 100%;
-  background-color: white;
-  opacity: 0.85;
-  z-index: -1;
-}
+
 
 
 /* Grid Areas */
@@ -42,7 +32,7 @@ main {
 #title {
   font-weight: 700;
   font-size: 1.5rem;
-  color: #58b45e;
+  color: rgb(255, 247, 237);
   grid-area: title;
 }
 
@@ -82,7 +72,7 @@ section {
 }
 
 .container {
-  background-color: rgba(245, 245, 245, 0.842);
+  background-color: rgba(255, 247, 237, 0.952);
   border-radius: 2rem;
 }
 
@@ -103,17 +93,16 @@ section {
 
 label {
   display: inline-block;
-  font-weight: 500;
   margin: 2%;
-
+  font-weight: 600;
 }
 
 button {
   display: inline-block;
   padding: 10px 20px;
   margin-top: 2%;
-  margin-left: 5%;
-  background-color: #4caf50;
+  margin-left: 1%;
+    background-color: #8C205C;
   color: white;
   border: none;
   cursor: pointer;
@@ -121,7 +110,7 @@ button {
 }
 
 button:hover {
-  background-color: #3c8a41;
+  background-color: #d4348c;
 }
 
 #calcSharedItem {
@@ -129,9 +118,18 @@ button:hover {
 }
 
 #addClient {
-  width: 25%;
+  margin-top: 2.3rem;
 }
 
+#calcButtons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.input_btn {
+  display: flex;
+  justify-content: flex-end;
+}
 
 /* Estilos dos resultados */
 

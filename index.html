@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
     <title>Divisor de contas</title>
 </head>
 
@@ -16,6 +17,13 @@
 
         <section id="title">
             <h1> Divisor de contas</h1>
+        </section>
+
+        <section id='btnResults'>
+            <div id="calcButtons">
+                <button id="calc" onclick="calcClient()">Calcular</button>
+                <button onclick="location.reload()"> Nova conta</button>
+            </div>
         </section>
 
         <section id="addSharedItem" class="container">
@@ -36,9 +44,8 @@
                     <input type="number" id="priceShared">
                 </div>
 
-                <div>
+                <div class="input_btn">
                     <button onclick="clientsSharedItem()">Adicionar cliente</button>
-                    <button id="calcSharedItem" onclick="calcSharedItem()">Calcular</button>
                 </div>
 
             </div>
@@ -64,25 +71,22 @@
                     <input type="number" id="itemPrice">
                 </div>
 
-                <button id="addClient" onclick="add()">Adicionar</button>
+                <div class="input_btn">
+                    <button id="addClient"  onclick="add()">Adicionar</button>
+                </div>
 
             </div>
 
 
         </section>
 
-        <section id='btnResults'>
-            <div>
-                <button id="calc" onclick="calcClient()">Calcular</button>
-                <button onclick="location.reload()"> Nova conta</button>
-            </div>
-        </section>
+
 
 
         <section class="container" id="resultsShared">
 
             <div class="resultsInfos" id="infosResultsShared">
-                <h2>Resultado dos itens compartilhados</h2>
+                <h2>Itens compartilhados</h2>
             </div>
 
         </section>
@@ -111,7 +115,10 @@
 
     </main>
 
-    <script src="script.js"></script>
+    <script src="./scripts/class.js"></script>
+    <script src="./scripts/individuais.js"></script>
+    <script src="./scripts/compartilhados.js"></script>
+    <script src="./scripts/script.js"></script>
 
 </body>
 
