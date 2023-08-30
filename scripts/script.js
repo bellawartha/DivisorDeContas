@@ -11,7 +11,7 @@ let txtPrice = document.getElementById('itemPrice');
 // Resultados
 let divResults = document.getElementById('containerResults');
 let clientTotalAmount = document.getElementById('clientTotalAmount');
-let clientTotalAmount10 = document.getElementById ('clientTotalAmount10');
+let clientTotalAmount10 = document.getElementById('clientTotalAmount10');
 let resultShared = document.getElementById('infosResultsShared');
 
 let infoShared = document.createElement('div');
@@ -23,7 +23,6 @@ divResults.appendChild(resultAdd);
 function calcClient() {
     clientTotalAmount.innerHTML = '';
     clientTotalAmount10.innerHTML = ' ';
-    calcSharedItem()
 
     let resultClient = document.createElement('div');
     let resultClient10 = document.createElement('div');

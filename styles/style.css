@@ -102,7 +102,7 @@ button {
   padding: 10px 20px;
   margin-top: 2%;
   margin-left: 1%;
-    background-color: #8C205C;
+  background-color: #8C205C;
   color: white;
   border: none;
   cursor: pointer;
@@ -113,9 +113,6 @@ button:hover {
   background-color: #d4348c;
 }
 
-#calcSharedItem {
-  visibility: hidden;
-}
 
 #addClient {
   margin-top: 2.3rem;
