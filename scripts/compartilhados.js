@@ -48,10 +48,15 @@ function calcSharedItem() {
         clientShared = [];
         txtSharedItem.value = '';
         txtPriceItemShared.value = '';
+        txtSharedItem.removeAttribute('disabled', 'disabled');
+        txtPriceItemShared.removeAttribute('disabled', 'disabled');
+
     }
 }
 
 function clientsSharedItem() {
+    let txtSharedItem = document.getElementById('sharedItems');
+    let txtPriceItemShared = document.getElementById('priceShared');
     let txtClientName = document.getElementById('clientsSharedNames');
 
 
@@ -63,6 +68,8 @@ function clientsSharedItem() {
 
 
         listOfClientsShared();
+        txtSharedItem.setAttribute('disabled', 'disabled');
+        txtPriceItemShared.setAttribute('disabled', 'disabled');
     }
 
     txtClientName.value = '';
