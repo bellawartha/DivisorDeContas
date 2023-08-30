@@ -43,7 +43,7 @@ function calcSharedItem() {
         for (let clientS of newSharedItem.clientsShared) {
             infoShared.innerHTML += `<p>${clientS}</p>`;
         }
-        
+
         itemsPerClient();
         clientShared = [];
         txtSharedItem.value = '';
@@ -92,8 +92,6 @@ function addSharedClients() {
         let newItem = new Item(sharedItems, priceShared);
         newClient.adicionarItem(newItem);
     }
-
-
 }
 
 function itemsPerClient() {
@@ -110,17 +108,13 @@ function itemsPerClient() {
 
 function listOfClientsShared() {
     infoShared.innerHTML = '';
+    let txtSharedItem = document.getElementById('sharedItems');
+    let sharedItems = txtSharedItem.value.toUpperCase();
 
     for (let client of clientShared) {
-        infoShared.innerHTML += `<br><p>${client} foi adicionado(a) com sucesso</p>`;
+        infoShared.innerHTML += `<br><p>${client} foi adicionado(a) com sucesso ao item ${sharedItems}</p>`;
+
     }
 
-    // infoShared.innerHTML = `<p><strong>Item compartilhado:</strong> ${sharedItems}</p>` +
-    //     `<p><strong>Preço do item:</strong> R$ ${priceItemShared}</p>` +
-    //     `<p><strong>Preço para cada pessoa:</strong> R$ ${priceShared}</p>` +
-    //     '<p><strong>Pessoas que compartilharam:</strong></p>';
 
-    // for (let clientS of newSharedItem.clientsShared) {
-    //     infoShared.innerHTML += `<p>${clientS}</p>`;
-    // }
 }
