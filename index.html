@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
     <title>Divisor de contas</title>
 </head>
 
@@ -18,19 +19,33 @@
             <h1> Divisor de contas</h1>
         </section>
 
+        <section id='btnResults'>
+            <div id="calcButtons">
+                <button id="calc" onclick="calcClient()">Calcular</button>
+                <button onclick="location.reload()"> Nova conta</button>
+            </div>
+        </section>
+
         <section id="addSharedItem" class="container">
             <div class="containerAdd">
 
-                <div>
+                <div class="inputs">
                     <label for="clientsSharedNames">Nome das pessoas que compartilharam: </label>
                     <input type="text" id="clientsSharedNames">
+                </div>
 
+                <div class="inputs">
                     <label for="sharedItems">Item compartilhado: </label>
                     <input type="text" id="sharedItems">
+                </div>
+
+                <div class="inputs">
                     <label for="priceShared"> Preço: </label>
                     <input type="number" id="priceShared">
+                </div>
+
+                <div class="input_btn">
                     <button onclick="clientsSharedItem()">Adicionar cliente</button>
-                    <button id="calcSharedItem" onclick="calcSharedItem()">Calcular</button>
                 </div>
 
             </div>
@@ -39,31 +54,39 @@
         <section class="container" id="addInfosClients">
 
             <div class="containerAdd">
-                <label for="clientName">Nome do cliente:</label>
-                <input type="text" id="clientName">
-                <label for="consumedItems">Item individual: </label>
-                <input type="text" id="consumedItems">
-                <label for="itemPrice"> Preço do item: </label>
-                <input type="number" id="itemPrice">
-                <button id="addClient" onclick="add()">Adicionar</button>
+
+                <div class="inputs">
+
+                    <label for="clientName">Nome do cliente:</label>
+                    <input type="text" id="clientName">
+                </div>
+
+                <div class="inputs">
+                    <label for="consumedItems">Item individual: </label>
+                    <input type="text" id="consumedItems">
+                </div>
+
+                <div class="inputs">
+                    <label for="itemPrice"> Preço do item: </label>
+                    <input type="number" id="itemPrice">
+                </div>
+
+                <div class="input_btn">
+                    <button id="addClient"  onclick="add()">Adicionar</button>
+                </div>
 
             </div>
 
 
         </section>
 
-        <section id='btnResults'>
-            <div>
-                <button id="calc" onclick="calcClient()">Calcular</button>
-                <button onclick="location.reload()"> Nova conta</button>
-            </div>
-        </section>
+
 
 
         <section class="container" id="resultsShared">
 
             <div class="resultsInfos" id="infosResultsShared">
-                <h2>Resultado dos itens compartilhados</h2>
+                <h2>Itens compartilhados</h2>
             </div>
 
         </section>
@@ -85,9 +108,17 @@
 
         </section>
 
+        <section class="container" id="results_10">
+            <h2>Total com 10%</h2>
+            <div class="resultsInfos" id="clientTotalAmount10"> </div>
+        </section>
+
     </main>
 
-    <script src="script.js"></script>
+    <script src="./scripts/class.js"></script>
+    <script src="./scripts/individuais.js"></script>
+    <script src="./scripts/compartilhados.js"></script>
+    <script src="./scripts/script.js"></script>
 
 </body>
 
